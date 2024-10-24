@@ -3,22 +3,20 @@ import './App.css'
 import Heading from './components/Heading'
 import LoginForm from './components/LoginForm'
 import SignUp from './components/SignUp'
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
+import Home from './components/Home'
+import LoginSignUp from './components/LoginSignUp'
 
 function App() {
-  const [showLoginForm, setShowLoginForm] = useState(false)
-
+  
   return (
     <>
-      <div className='main-container'>
-        <Heading />
-        <div className='buttons-container'>
-          <button className='form-button' onClick={() => setShowLoginForm(false)}>Sign Up</button>
-          <button className='form-button' onClick={() => setShowLoginForm(true)}>Login</button>
-        </div>
-        <div className='forms-container'>
-          {showLoginForm ? <LoginForm />: <SignUp />}
-        </div>
-      </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<LoginSignUp/>} />
+      <Route path='/home' element={<Home/>} />
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }

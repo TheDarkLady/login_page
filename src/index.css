@@ -1,5 +1,5 @@
 :root {
-  background-image: url("https://aqua-stingray-548056.hostingersite.com/wp-content/uploads/2024/10/256AquaCourt__RearElevation.webp");
+  /* background-image: url("https://aqua-stingray-548056.hostingersite.com/wp-content/uploads/2024/10/256AquaCourt__RearElevation.webp"); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -19,11 +19,24 @@ body {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
-  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
+  background-image: url(https://aqua-stingray-548056.hostingersite.com/wp-content/uploads/2024/10/256AquaCourt__RearElevation.webp);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.sub-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
   border-radius: 10px;
 }
 .heading-container{
@@ -50,6 +63,8 @@ body {
 .form-container{
   width: 50%;
   padding: 20px;
+  height: 350px;
+  width: 400px;
 }
 .form-label{
   color: #fefefe;
@@ -76,4 +91,14 @@ body {
   color: #1a1a1a;
   cursor: pointer;
   margin-top: 20px;
+}
+
+.form-button:hover{
+  background-color: #1a1a1a;
+  color: #fefefe;
+}
+
+.form-button:active{
+  background-color: #fefefe;
+  color: #1a1a1a;
 }
