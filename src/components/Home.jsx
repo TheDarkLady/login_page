@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import BannerComponent from './BannerComponent'
 function Home() {
   const location = useLocation()
 
@@ -20,8 +21,8 @@ function Home() {
     }
   }, [location.state])
   return (
-    <div>
-      <h1>Home page</h1>
+    <div className='flex flex-col justify-start items-center'>
+      <BannerComponent />
       <ToastContainer />
     </div>
     

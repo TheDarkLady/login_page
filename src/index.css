@@ -1,5 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 :root {
-  /* background-image: url("https://aqua-stingray-548056.hostingersite.com/wp-content/uploads/2024/10/256AquaCourt__RearElevation.webp"); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
