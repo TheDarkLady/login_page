@@ -4,9 +4,9 @@ import Image2 from '../assets/feature-2.png'
 function Charts() {
     return (
         <div className='w-[100%] bg-[#f9fafb] flex flex-col justify-start items-center'>
-            <div className='max-w-[1200px]  max-auto h-screen flex flex-col justify-center items-center px-5 py-10 lg:py-24 lg:p-6 gap-20 my-24'>
+            <div className='max-w-[1200px]  max-auto h-full flex flex-col justify-center items-center px-5 py-10 lg:py-24 lg:p-6 gap-20 my-24'>
                 <div className='w-[100%] h-[100%] flex flex-row justify-center items-center gap-10 '>
-                    <div className='w-[50%] flex flex-col justify-center items-start'>
+                    <div className='w-[100%] h-[100%] lg:w-[50%] flex flex-col justify-center items-start'>
                         <div className='w-[100%] border-b border-[#e5e7eb]'>
                             <h1 className='mb-4 text-3xl font-extrabold tracking-tight text-gray-900'>Work with tools you already use</h1>
                             <p className='mb-8 font-light lg:text-xl text-[#6b7280]'>Deliver great service experiences fast - without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate toil, and deploy changes with ease.</p>
@@ -30,12 +30,12 @@ function Charts() {
                             <p className='mb-8 font-light lg:text-xl text-[#6b7280]'>Deliver great service experiences fast - without the complexity of traditional ITSM solutions.</p>
                         </div>
                     </div>
-                    <div className='w-[50%]'>
+                    <div className='w-[50%] hidden lg:block'>
                         <img src={Image1} alt="" />
                     </div>
                 </div>
                 <div className='w-[100%] h-[100%] flex flex-row-reverse justify-center items-center gap-10'>
-                    <div className='w-[50%] flex flex-col justify-center items-start'>
+                    <div className='w-[100%] h-[100%] lg:w-[50%] flex flex-col justify-center items-start'>
                         <div className='w-[100%] border-b border-[#e5e7eb]'>
                             <h1 className='mb-4 text-3xl font-extrabold tracking-tight text-gray-900'>We invest in the world’s potential</h1>
                             <p className='mb-8 font-light lg:text-xl text-[#6b7280]'>Deliver great service experiences fast - without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate toil, and deploy changes with ease.</p>
@@ -67,7 +67,7 @@ function Charts() {
                             <p className='mb-8 font-light lg:text-xl text-[#6b7280]'>Deliver great service experiences fast - without the complexity of traditional ITSM solutions.</p>
                         </div>
                     </div>
-                    <div className='w-[50%]'>
+                    <div className='w-[50%] hidden lg:block'>
                         <img src={Image2} alt="" />
                     </div>
                 </div>
