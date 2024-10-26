@@ -106,3 +106,21 @@ body {
   background-color: #fefefe;
   color: #1a1a1a;
 }
+.banner-buttons-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:start ;
+  gap: 15px;
+}
+@media only screen and (max-width:530px){
+  .banner-buttons-container{
+    flex-direction: column;
+  }
+  .banner-buttons-container a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

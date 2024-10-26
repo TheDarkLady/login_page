@@ -3,6 +3,8 @@ import { useLocation } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import BannerComponent from './BannerComponent'
+import Client from './Client'
+
 function Home() {
   const location = useLocation()
 
@@ -23,6 +25,7 @@ function Home() {
   return (
     <div className='flex flex-col justify-start items-center'>
       <BannerComponent />
+      <Client />
       <ToastContainer />
     </div>
     
