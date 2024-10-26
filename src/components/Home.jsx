@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import BannerComponent from './BannerComponent'
 import Client from './Client'
+import Charts from './Charts'
 
 function Home() {
   const location = useLocation()
@@ -26,6 +27,7 @@ function Home() {
     <div className='flex flex-col justify-start items-center'>
       <BannerComponent />
       <Client />
+      <Charts />
       <ToastContainer />
     </div>
     
