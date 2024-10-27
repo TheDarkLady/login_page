@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import BannerComponent from './BannerComponent'
 import Client from './Client'
 import Charts from './Charts'
+import AboutUs from './AboutUs'
 
 function Home() {
   const location = useLocation()
@@ -28,6 +29,7 @@ function Home() {
       <BannerComponent />
       <Client />
       <Charts />
+      <AboutUs />
       <ToastContainer />
     </div>
     
