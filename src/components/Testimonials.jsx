@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "../assets/hero.png";
-
+import Img from "../assets/michael-gouch.png"
 function Testimonials() {
   return (
     <div className="w-[100%] bg-[#f9fafb] flex flex-col justify-start items-center">
@@ -21,9 +20,9 @@ function Testimonials() {
             <p className="text-[20px] lg:text-[24px] text-[#111827]">"Landwind is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
         </blockquote>
         <figcaption class="flex items-center justify-center mt-6 space-x-3">
-                    <img class="w-6 h-6 rounded-full" src={Image} alt="profile picture" />
+                    <img class="w-6 h-6 rounded-full" src={Img} alt="profile picture" />
                     <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                        <div class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</div>
+                        <div class="pr-3 font-medium text-gray-900 ">Micheal Gough</div>
                         <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at Google</div>
                     </div>
                 </figcaption>
