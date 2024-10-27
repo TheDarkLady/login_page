@@ -6,6 +6,7 @@ import BannerComponent from './BannerComponent'
 import Client from './Client'
 import Charts from './Charts'
 import AboutUs from './AboutUs'
+import Testimonials from './Testimonials'
 
 function Home() {
   const location = useLocation()
@@ -30,6 +31,7 @@ function Home() {
       <Client />
       <Charts />
       <AboutUs />
+      <Testimonials />
       <ToastContainer />
     </div>
     
