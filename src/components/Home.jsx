@@ -7,6 +7,7 @@ import Client from './Client'
 import Charts from './Charts'
 import AboutUs from './AboutUs'
 import Testimonials from './Testimonials'
+import BusinessSection from './BusinessSection'
 
 function Home() {
   const location = useLocation()
@@ -32,6 +33,7 @@ function Home() {
       <Charts />
       <AboutUs />
       <Testimonials />
+      <BusinessSection />
       <ToastContainer />
     </div>
     
